@@ -1,0 +1,11 @@
+.testproject_release_binaries:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+
+testproject_release_binaries_dev:
+  extends: .testproject_release_binaries
+  only:
+    - develop
+  script:
+  - aws s3 cp --content-type binary/octet-stream dist/linux-gnu/testproject s3://dev.dl.frkl.io/linux-gnu/testproject
+  - aws s3 cp --content-type binary/octet-stream dist/windows/testproject.exe s3://dev.dl.frkl.io/windows/testproject.exe

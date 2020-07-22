@@ -1,0 +1,16 @@
+{
+    "template": "https://gitlab.com/frkl/frkl.python-project.git",
+    "commit": "cf111c0365bfc0497fd226c386aff73d0c47309f",
+    "context": {
+        "cookiecutter": {
+            "full_name": "Markus Binsteiner",
+            "email": "markus@frkl.io",
+            "project_name": "testproject",
+            "exe_name": "testproject",
+            "project_slug": "testproject",
+            "project_main_module": "testproject",
+            "project_short_description": "asdf",
+            "_template": "https://gitlab.com/frkl/frkl.python-project.git"
+        }
+    }
+}
