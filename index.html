@@ -220,10 +220,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    Downloads
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binaries" class="md-nav__link">
+    Binaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="install/" title="Install" class="md-nav__link">
+      Install
+    </a>
   </li>
 
     
@@ -283,6 +315,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    Downloads
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binaries" class="md-nav__link">
+    Binaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -313,6 +365,13 @@
 <p><em>asdf</em></p>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Documentation still to be done.</p>
+<h2 id="downloads">Downloads<a class="headerlink" href="#downloads" title="Permanent link">&para;</a></h2>
+<h3 id="binaries">Binaries<a class="headerlink" href="#binaries" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://s3-eu-west-1.amazonaws.com/dev.dl.frkl.io/linux-gnu/testproject">Linux</a></li>
+<li><a href="https://s3-eu-west-1.amazonaws.com/dev.dl.frkl.io/windows/testproject.exe">Windows</a></li>
+<li><a href="https://s3-eu-west-1.amazonaws.com/dev.dl.frkl.io/darwin/testproject">Mac OS X</a></li>
+</ul>
 <h1 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h1>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
@@ -339,6 +398,7 @@
 <h2 id="make-targets"><code>make</code> targets<a class="headerlink" href="#make-targets" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>init</code>: init development project (install project &amp; dev dependencies into virtualenv, as well as pre-commit git hook)</li>
+<li><code>binary</code>: create binary for project (will install <em>pyenv</em> -- check <code>scripts/build-binary</code> for details)</li>
 <li><code>flake</code>: run <em>flake8</em> tests</li>
 <li><code>mypy</code>: run mypy tests</li>
 <li><code>test</code>: run unit tests</li>
@@ -386,13 +446,13 @@
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
         
-          <a href="usage/" title="Usage" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="install/" title="Install" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Usage
+                Install
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
